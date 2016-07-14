@@ -62,6 +62,13 @@ $(document).ready(function () {
         $(".widget_dinamic").toggle();
     });
 
+    //устанавливаем код
+    var installCode = $('#install');
+
+    installCode.click(function(){
+        $(this).replaceWith("<span id='installing'>(установлено)<span>");
+    });
+
     //открытие виджетов
     var openWiget = $('#set_widget');
     var image = $('.open_widget_image');
@@ -71,27 +78,32 @@ $(document).ready(function () {
     openWiget.click(function(){
         $(".widget_vk").hide();
         $(".widget_robot").hide();
-        $(".widget_image").hide();
+        $(".widget_img").hide();
         $("#widgets").toggle();
     });
 
     image.click(function(){
         $(".widget_robot").hide();
         $(".widget_vk").hide();
-        $(".widget_image").toggle();
+        $(".widget_img").toggle();
+
         $('.check_image').addClass('.checkbox:checked + label:before');
     });
 
     vk.click(function(){
         $(".widget_robot").hide();
-        $(".widget_image").hide();
+        $(".widget_img").hide();
         $(".widget_vk").toggle();
     });
 
     robot.click(function(){
         $(".widget_vk").hide();
-        $(".widget_image").hide();
+        $(".widget_img").hide();
         $(".widget_robot").toggle();
+    });
+
+    $("#about_widget_img").click(function(){
+            $(".about_widget_img").show();
     });
 
 });

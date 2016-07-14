@@ -152,9 +152,17 @@
                         Работа с виджетами и доменами
                     </h2>
                     <div class="setting_widget">
-                        <div class="col-xs-4"><span>Домен:</span> pokupka-tyt.ru</div>
-                        <div class="col-xs-4"><span>Код не установлен </span>(установить)</div>
-                        <div class="col-xs-4"><span>Настроить виджеты</span><img src="images/strelka.png" alt="" id="set_widget"></div>
+                        <div class="col-xs-4">
+                            <span>Домен:</span> pokupka-tyt.ru
+                        </div>
+                        <div class="col-xs-4">
+                            <span>Код не установлен </span>
+                            <span id="install">(установить)</span>
+                        </div>
+                        <div class="col-xs-4">
+                            <span>Настроить виджеты</span>
+                            <img src="images/strelka.png" alt="" id="set_widget">
+                        </div>
                     </div>
                 <div id="widgets">
                     <div class="col-md-4">
@@ -162,7 +170,7 @@
                             «Кто заказал?»</h3>
                         <input type="checkbox" class="checkbox check_image" id="checkbox" />
                         <label for="checkbox">Выкл/вкл</label>
-                        <p>О виджете</p>
+                        <p id="about_widget_img">О виджете</p>
                         <p>Статистика виджета</p>
                         <p>Настройка виджета</p>
                         <img src="images/strelka.png" alt="" class="open_widget_image">
@@ -190,8 +198,10 @@
                 </div>
             </div>
         </section>
-        <section class="widget_image">
-            <section class="wrapper_footer widget_footer">
+        <section class="view"></section>
+        <section class="widget_img">
+            <div class="container no-paddings">
+                <section class="wrapper_footer widget_footer">
                         <p class="title_widget">Настройка виджета</p>
                         <p class="name_widget">«Кто заказал?»</p>
                         <p class="settings">Общие настройки</p>
@@ -242,9 +252,10 @@
                     <li>Окно 7
                     </li>
                 </ul>
+                <div class="set_window">
                 <h2>Настройка окна №4</h2>
-                <div >
-                    <p>Текст окна №1</p>
+
+                    <span class="">Текст окна №1</span>
                     <div class="text_window">
                         <div class="inputs">
                             <input type="text" id="style" value="B I S">
@@ -255,8 +266,8 @@
                         </div>
                         <textarea name="text" id=""></textarea>
                     </div>
-                </div>
-                <div class="row">
+
+                <div class="row no-paddings">
                     <div class="col-xs-6">
                         <span class="color_setting">Настройка цвета текста</span>
                         <ul class="color_text">
@@ -271,7 +282,6 @@
                         </ul>
                         <input type="color" id="myColor" oninput="myFunction()">
                         <p id="demo"></p>
-
 
                         <span class="color_setting">Настройка цвета окна</span>
                         <ul class="color_window">
@@ -293,10 +303,9 @@
                     </div>
 
                     <div class="col-xs-6">
-                        <div class="widget_image">
+                            <div class="widget">
                             <p class="widget_text">Предпросмотр окна №4:</p>
                             <div class="widget-image">
-
                                 <div class="copyright">
                                     Работает на Up Sale Site
                                 </div>
@@ -329,7 +338,7 @@
                                     <img src="images/next.png">
                                 </div>
                             </div>
-                        </div>
+                            </div>
                         <div class="buttons">
                             <a href="#" class="btn review" role="button">
                                 Предпросмотр
@@ -340,7 +349,69 @@
                         </div>
                     </div>
                 </div>
+                </div>
             </section>
+
+            </div>
+        </section>
+        <section class="about_widget_img">
+            <div class="container no-paddings">
+            <div class="col-xs-12 no-paddings">
+                <div class="widget">
+                    <h2>
+                        О виджете: «Кто заказал?»
+                    </h2>
+                    <div class="col-xs-5 no-paddings">
+                        <div class="widget-image">
+                            <div class="copyright">
+                                Работает на Up Sale Site
+                            </div>
+                            <div class="description">
+                                <div class="icon">
+                                    <img src="./images/basket-icon.png" alt="Корзина" width="59" height="51">
+                                </div>
+                                <p>
+                                    Алина Орлова г.Казань, сделала заказ на сумму 2990 руб.
+                                </p>
+                            </div>
+                            <div class="description-count">
+                                Осталось товара по акции:
+                            </div>
+                            <div class="count">
+                                <div class="input-for-ie">
+                                    <img src="./images/controller.png" alt="Регулятор" width="285" height="23">
+                                </div>
+                                <input type="range" name="range" min="0" max="25" value="20" disabled="">
+                                <output for="range" style="left: 227px; margin-left: -1.8%;">5 шт.</output>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-7 no-paddings">
+                        <div class="widget-description">
+                            <h3>Какая польза от виджета?</h3>
+                            <p>
+                                Данный виджет продемонстрирует посетителям, что у Вас активно идут заказы и повысит желание воспользоваться Вашим сервисом, услугой или товаром.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+        <section class="statistic statistic_widget_img">
+            <div class="container no-paddings">
+                <div class="col-xs-12 no-paddings">
+                    <p class="title_widget">Статистика виджета:</p>
+                    <p class="name_widget">«Кто заказал?»</p>
+                    <div class="days">
+                        <a>Сегодня</a>
+                        <a>Неделя</a>
+                        <a>Месяц</a>
+                        <a>Всего</a>
+                    </div>
+                    <p class="result">Количество показов: 135</p>
+                </div>
+            </div>
         </section>
         <section class="widget_vk">
             <div class="container">
