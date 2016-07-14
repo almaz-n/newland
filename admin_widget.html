@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Up Sale Site</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/lib/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/lib/bootstrap-theme.min.css">
+    <!--<link rel="stylesheet" href="./css/lib/jquery.custom-scrollbar.css" />-->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <div class="logo col-xs-4">
+            <div class="image">
+                <img src="./images/logo.png" alt="Лого" width="36" height="58">
+            </div>
+            <div class="logo-text">
+                Up Sale Site
+            </div>
+            <div class="logo-description">
+                Продажи сайта пойдут ВВЕРХ
+            </div>
+        </div>
+        <nav class="menu col-xs-8 no-paddings">
+            <ul>
+                <li>
+                    <a href="#">
+                        Выйти
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Кабинет
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Написать нам
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="active">
+                        Заработок
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Тарифы
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Виджеты
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+        <section class="user-statistics">
+            <div class="container">
+                <div class="col-xs-4">
+                    <div class="data">
+                        <span class="name big">
+                            Текущий тариф:
+                        </span>
+                        <span class="value big">
+                            Старт
+                            <a href="#">
+                                (сменить)
+                            </a>
+                        </span>
+                    </div>
+                    <div class="data">
+                        <span class="name big">
+                            Осталось:
+                        </span>
+                        <span class="value big">
+                            14 дней
+                            <a href="#">
+                                (продлить)
+                            </a>
+                        </span>
+                    </div>
+                </div>
+                <div class="col-xs-2">
+                    <div class="data">
+                        <span class="name">
+                            Доступно:
+                        </span>
+                        <span class="value">
+                            3 домена
+                        </span>
+                    </div>
+                    <div class="data">
+                        <span class="name">
+                            Использованно:
+                        </span>
+                        <span class="value">
+                            1/3
+                        </span>
+                    </div>
+                </div>
+                <div class="col-xs-2">
+                    <div class="data">
+                        <span class="name">
+                            Доступно:
+                        </span>
+                        <span class="value">
+                            3 виджета
+                        </span>
+                    </div>
+                    <div class="data">
+                        <span class="name">
+                            Использованно:
+                        </span>
+                        <span class="value">
+                            2/3
+                        </span>
+                    </div>
+                </div>
+                <div class="col-xs-2">
+                    <div class="data">
+                        <span class="name">
+                            Доступно:
+                        </span>
+                        <span class="value">
+                            50 смс
+                        </span>
+                    </div>
+                    <div class="data">
+                        <span class="name">
+                            Использованно:
+                        </span>
+                        <span class="value">
+                            0/50
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+<div class="main">
+    <div class="container no-paddings">
+        <section class="widget_main">
+            <div class="container no-paddings">
+                    <h2>
+                        Работа с виджетами и доменами
+                    </h2>
+                    <div class="setting_widget">
+                        <div class="col-xs-4"><span>Домен:</span> pokupka-tyt.ru</div>
+                        <div class="col-xs-4"><span>Код не установлен </span>(установить)</div>
+                        <div class="col-xs-4"><span>Настроить виджеты</span><img src="images/strelka.png" alt="" id="set_widget"></div>
+                    </div>
+                <div id="widgets">
+                    <div class="col-md-4">
+                        <h3>Виджет<br>
+                            «Кто заказал?»</h3>
+                        <input type="checkbox" class="checkbox check_image" id="checkbox" />
+                        <label for="checkbox">Выкл/вкл</label>
+                        <p>О виджете</p>
+                        <p>Статистика виджета</p>
+                        <p>Настройка виджета</p>
+                        <img src="images/strelka.png" alt="" class="open_widget_image">
+                    </div>
+                    <div class="col-md-4">
+                        <h3>Виджет<br>
+                            «Вирусная релама ВК»</h3>
+                        <input type="checkbox" class="checkbox check_vk" id="vk" />
+                        <label for="vk">Выкл/вкл</label>
+                        <p>О виджете</p>
+                        <p>Статистика виджета</p>
+                        <p>Настройка виджета</p>
+                        <img src="images/strelka.png" alt="" class="open_widget_vk">
+                    </div>
+                    <div class="col-md-4">
+                        <h3>Виджет<br>
+                            «Робот-консультант»</h3>
+                        <input type="checkbox" class="checkbox check_robot" id="robot" />
+                        <label for="robot">Выкл/вкл</label>
+                        <p>О виджете</p>
+                        <p>Статистика виджета</p>
+                        <p>Настройка виджета</p>
+                        <img src="images/strelka.png" alt="" class="open_widget_robot">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="widget_image">
+            <section class="wrapper_footer widget_footer">
+                        <p class="title_widget">Настройка виджета</p>
+                        <p class="name_widget">«Кто заказал?»</p>
+                        <p class="settings">Общие настройки</p>
+                        <form role="form">
+                            <div class="form-group">
+                                <label for="exit">Частота выхода виджета (сек.)</label>
+                                <input type="text" class="form-control" id="exit" placeholder="15 (рекомен.)">
+                            </div>
+                            <div class="form-group">
+                                <label for="pass">Количество окон</label>
+                                <input type="text" class="form-control" id="pass" placeholder="7 (рекомен.)">
+                            </div>
+                            <div class="form-group">
+                                <label for="number">Расположение на сайте</label>
+                                <select id="number">
+                                    <option>Сверху справо (рекомен.)</option>
+                                </select>
+                            </div>
+                            <label class="checkbox-inline">
+                                <input type="checkbox" value="">
+                                <span>Показывать на мобильных</span>
+                            </label>
+                        </form>
+                        <p class="settings">Настройки ограничений</p>
+                        <form role="form">
+                            <label class="checkbox-inline"><input type="checkbox" value=""><span>Включить ограничение</span></label>
+                            <div class="form-group">
+                                <label for="ostatok">Заголовок</label>
+                                <input type="text" class="form-control" id="ostatok" placeholder="Осталось товаров по акции">
+                            </div>
+                            <a href="#" class="btn" role="button">
+                                Сохранить
+                            </a>
+                        </form>
+                <ul id="window">
+                    <li>Окно 1
+                    </li>
+                    <li>Окно 2
+                    </li>
+                    <li>Окно 3
+                    </li>
+                    <li>Окно 4
+                    </li>
+                    <li>Окно 5
+                    </li>
+                    <li>Окно 6
+                    </li>
+                    <li>Окно 7
+                    </li>
+                </ul>
+                <h2>Настройка окна №4</h2>
+                <div >
+                    <p>Текст окна №1</p>
+                    <div class="text_window">
+                        <div class="inputs">
+                            <input type="text" id="style" value="B I S">
+                            <select id="font-family">
+                                <option>Arial</option>
+                            </select>
+                            <input type="text" id="limit">
+                        </div>
+                        <textarea name="text" id=""></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-6">
+                        <span class="color_setting">Настройка цвета текста</span>
+                        <ul class="color_text">
+                            <li class="black"></li>
+                            <li class="gray"></li>
+                            <li class="white"></li>
+                            <li class="green"></li>
+                            <li class="yellow"></li>
+                            <li class="red"></li>
+                            <li class="blue"></li>
+                            <li class="orange"></li>
+                        </ul>
+                        <input type="color" id="myColor" oninput="myFunction()">
+                        <p id="demo"></p>
+
+
+                        <span class="color_setting">Настройка цвета окна</span>
+                        <ul class="color_window">
+                            <li class="black"></li>
+                            <li class="gray"></li>
+                            <li class="white"></li>
+                            <li class="green"></li>
+                            <li class="yellow"></li>
+                            <li class="red"></li>
+                            <li class="blue"></li>
+                            <li class="orange"></li>
+                        </ul>
+                        <span class="image_widget">Изображение окна виджета</span>
+                        <p class="opacity_widget">Настройка прозрачности виджета</p>
+                        <div id="slider">
+                            <div id="slider-range-min"></div>
+                            <input type="text" id="amount" readonly style="border:0;">
+                        </div>
+                    </div>
+
+                    <div class="col-xs-6">
+                        <div class="widget_image">
+                            <p class="widget_text">Предпросмотр окна №4:</p>
+                            <div class="widget-image">
+
+                                <div class="copyright">
+                                    Работает на Up Sale Site
+                                </div>
+                                <div class="description">
+                                    <div class="icon">
+                                        <img src="./images/basket-icon.png" alt="Корзина" width="59" height="51">
+                                    </div>
+                                    <p>
+                                        Алина Орлова г.Казань, сделала заказ на сумму 2990 руб.
+                                    </p>
+                                </div>
+                                <div class="description-count">
+                                    Осталось товара по акции:
+                                </div>
+                                <div class="count">
+                                    <div class="input-for-ie">
+                                        <img src="./images/controller.png" alt="Регулятор" width="285" height="23">
+                                    </div>
+                                    <input type="range" name="range" min="0" max="25" value="20" disabled="">
+                                    <output for="range" style="left: 227px; margin-left: -1.8%;">4 шт.</output>
+                                </div>
+                            </div>
+                            <div class="pagin clearfix">
+                                <div class="prev">
+                                    <img src="images/prev.png">
+                                    Предыдущее окно
+                                </div>
+                                <div class="next">
+                                    Следующее окно
+                                    <img src="images/next.png">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="buttons">
+                            <a href="#" class="btn review" role="button">
+                                Предпросмотр
+                            </a>
+                            <a href="#" class="btn save" role="button">
+                                Сохранить
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <section class="widget_vk">
+            <div class="container">
+                <div class="col-xs-12">
+                    <p class="head_widget">Настройка виджета</p>
+                    <p class="name_widget">«Вирусная реклама ВК» </p>
+                    <div class="row step_one">
+                        <div class="col-xs-6">
+                            <div class="general_settings">
+                                <p class="general_settings_title">Общие настройки</p>
+                                <form role="form">
+                                    <div class="form-group">
+                                        <label for="location">Расположение на сайте</label>
+                                        <select id="location">
+                                            <option>Cправо (рекомен.)</option>
+                                        </select>
+                                    </div>
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox" value="">
+                                        <span>Показывать на мобильных</span>
+                                    </label>
+                                </form>
+                                <span class="color_setting">Настройка цвета текста</span>
+                                <ul class="color_text">
+                                    <li class="black"></li>
+                                    <li class="gray"></li>
+                                    <li class="white"></li>
+                                    <li class="green"></li>
+                                    <li class="yellow"></li>
+                                    <li class="red"></li>
+                                    <li class="blue"></li>
+                                    <li class="orange"></li>
+                                </ul>
+                                <input type="color" class="select_text_color">
+                                <span class="result_text_color"></span>
+
+                                <span class="color_setting">Настройка цвета окна</span>
+                                <ul class="color_window">
+                                    <li class="black"></li>
+                                    <li class="gray"></li>
+                                    <li class="white"></li>
+                                    <li class="green"></li>
+                                    <li class="yellow"></li>
+                                    <li class="red"></li>
+                                    <li class="blue"></li>
+                                    <li class="orange"></li>
+                                </ul>
+                                <input type="color" class="select_window_color">
+                                <span class="result_text_color"></span>
+
+                                <div class="textarea">
+                                    <p>Текст призыва к действию</p>
+                                    <div class="text_window">
+                                        <div class="inputs">
+                                            <input type="text" class="style" value="B I S">
+                                            <select class="font-family">
+                                                <option>Arial</option>
+                                            </select>
+                                            <input type="text" class="limit">
+                                        </div>
+                                        <textarea name="text"></textarea>
+                                    </div>
+                                    <p>Текст по завершению публикации</p>
+                                    <div class="text_window">
+                                        <div class="inputs">
+                                            <input type="text" class="style" value="B I S">
+                                            <select class="font-family">
+                                                <option>Arial</option>
+                                            </select>
+                                            <input type="text" class="limit">
+                                        </div>
+                                        <textarea name="text"></textarea>
+                                    </div>
+                                </div>
+                                <div class="buttons">
+                                    <a href="#" class="btn back" role="button">
+                                        Назад
+                                    </a>
+                                    <a href="#" class="btn next" role="button">
+                                        Далее
+                                    </a>
+                                    <a href="#" class="btn save" role="button">
+                                        Сохранить
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 preview_widget">
+                            <div class="widget">
+                                <p class="widget_text">Предпросмотр виджета</p>
+                                <div class="widget_static">
+                                    <p class="widget_static_text">Хотите получить скидку?</p>
+                                    <div class="arrow"></div>
+                                </div>
+                                <div class="widget_dinamic">
+                                    <div class="widget_dinamic_header">
+                                        <div class="copyright">
+                                            Работает на Up Sale Site
+                                        </div>
+                                        <div class="description">
+                                            Расcкажите о нас вконтакте  и получите 10% СКИДКУ
+                                        </div>
+                                    </div>
+                                    <div class="widget_dinamic_footer">
+                                        <div class="clearfix">
+                                            <img src="./images/vk_fing.png" alt="">
+                                    <span>
+                                        Нажмите на кнопку,
+                                        чтобы разместить запись
+                                        на своей странице!
+                                    </span>
+                                        </div>
+                                        <img src="./images/vk_widget.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row step_two">
+                        <div class="step_one">
+                            <div class="col-xs-6">
+                                <div class="general_settings">
+                                    <p class="general_settings_title">Настройка публикации</p>
+                                    <p class="file_upload_description">
+                                        Выберите изображение, которое будет добавляться в текст поста пользователя
+                                    </p>
+                                    <div class="file-upload">
+                                        <label>
+                                            <input type="file" name="file">
+                                            <span>+</span>
+                                            <span>Выбрать изображение</span>
+                                        </label>
+                                    </div>
+
+                                    <div class="buttons">
+                                        <a href="#" class="btn back" role="button">
+                                            Назад
+                                        </a>
+                                        <a href="#" class="btn next" role="button">
+                                            Далее
+                                        </a>
+                                        <a href="#" class="btn save" role="button">
+                                            Сохранить
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-6 preview_widget">
+                                <div class="widget">
+                                    <p class="widget_text">Предпросмотр публикации</p>
+                                    <div class="widget_static">
+                                        <p class="widget_static_text">Хотите получить скидку?</p>
+                                        <div class="arrow"></div>
+                                    </div>
+                                    <div class="widget_dinamic">
+                                        <div class="widget_dinamic_header">
+                                            <div class="copyright">
+                                                Работает на Up Sale Site
+                                            </div>
+                                            <div class="description">
+                                                Расcкажите о нас вконтакте  и получите 10% СКИДКУ
+                                            </div>
+                                        </div>
+                                        <div class="widget_dinamic_footer">
+                                            <div class="clearfix">
+                                                <img src="./images/vk_fing.png" alt="">
+                                    <span>
+                                        Нажмите на кнопку,
+                                        чтобы разместить запись
+                                        на своей странице!
+                                    </span>
+                                            </div>
+                                            <img src="./images/vk_widget.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="widget_robot">
+            <div class="container">
+                <div class="col-xs-12">
+                    <p class="title_widget">Настройка виджета</p>
+                    <p class="name_widget">«Робот консультант» </p>
+                    <div class="row">
+                        <div class="col-xs-6">
+                            <div class="general_settings">
+                                <p class="general_settings_title">Общие настройки</p>
+                                <form role="form">
+                                    <div class="form-group">
+                                        <label for="location_robot">Расположение на сайте</label>
+                                        <select id="location_robot" class="form-control">
+                                            <option checked>Cправо (рекомен.)</option>
+                                            <option>Сверху справо</option>
+                                            <option>Сверху слево</option>
+                                        </select>
+                                    </div>
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox" value="" >
+                                        <span>Показывать на мобильных</span>
+                                    </label>
+                                    <div class="form-group">
+                                        <label for="delay_robot">Задержка приветствия (сек.)</label>
+                                        <select id="delay_robot" class="form-control">
+                                            <option>25</option>
+                                        </select>
+                                    </div>
+                                    <label class="checkbox-inline">
+                                        <input type="checkbox" value="">
+                                        <span>Открывать чат только позапросу посетителя</span>
+                                    </label>
+                                </form>
+                                <span class="operator_image">Фотография оператора</span>
+                                <ul class="operator_images">
+                                    <li class="operator first_operator"><img src="./images/operator_1.png" alt=""></li>
+                                    <li class="operator second_operator"><img src="./images/operator_2.png" alt=""></li>
+                                    <li class="operator third_operator"><img src="./images/operator_3.png" alt=""></li>
+                                    <li class="operator fourth_operator"><img src="./images/operator_4.png" alt=""></li>
+                                </ul>
+                                <div class="file-upload">
+                                    <label>
+                                        <input type="file" name="file">
+                                        <span>+</span>
+                                        <span>Добавить свою фотографию</span>
+                                    </label>
+                                </div>
+                                <span class="color_setting">Цвет окна</span>
+                                <ul class="color_text">
+                                    <li class="black"></li>
+                                    <li class="gray"></li>
+                                    <li class="white"></li>
+                                    <li class="green"></li>
+                                    <li class="yellow"></li>
+                                    <li class="red"></li>
+                                    <li class="blue"></li>
+                                    <li class="orange"></li>
+                                </ul>
+                                <input type="color" class="select_text_color">
+                                <span class="result_text_color"></span>
+
+                                <div class="chat_setting">
+                                    <h2>Настройка чата</h2>
+                                    <div class="textarea">
+                                        <label>Текст первого сообщения</label>
+                                        <textarea name="first_message" class="form-control">Здравствуйте! У вас есть вопрос?</textarea>
+
+                                        <label>Текст второго сообщения</label>
+                                        <textarea name="second_message" class="form-control">Напишите, что Вас интересует и Вам обязательно помогу!</textarea>
+
+                                        <label>Сообщения перед формой заявки</label>
+                                        <textarea name="third_message" class="form-control">Давайте я Вам отвечу детально по телефону.</textarea>
+                                    </div>
+                                </div>
+
+                                <div class="client_data">
+                                    <h3>Какие данные собирать у клиента?</h3>
+                                    <div class="client_name">
+                                        <label class="checkbox-inline">
+                                            <input type="checkbox" class="name" value="name" checked>
+                                            <span>Имя</span>
+                                        </label>
+                                    </div>
+                                    <div class="client_telephone">
+                                        <label class="checkbox-inline">
+                                            <input type="checkbox" value="telephone" checked>
+                                            <span>Телефон</span>
+                                        </label>
+                                    </div>
+                                    <div class="client_city">
+                                        <label class="checkbox-inline">
+                                            <input type="checkbox" value="city">
+                                            <span>Город</span>
+                                        </label>
+                                    </div>
+                                    <div class="client_email">
+                                        <label class="checkbox-inline">
+                                            <input type="checkbox" value="email">
+                                            <span>E-mail</span>
+                                        </label>
+                                    </div>
+
+                                    <div class="final_massage">
+                                        <label class="final_massage_title">Текс финального сообщения</label>
+                                        <textarea name="text" class="form-control">Благодaрим, что обратились к нам в ближайшее время мы Вам перезвоним.</textarea>
+                                    </div>
+                                </div>
+                                <div class="send_place">
+                                    <h3 class="send_place_title">Куда отправлять заявки?</h3>
+                                    <div class="form-group">
+                                        <label for="send_place_email">E-mail</label>
+                                        <input type="text" class="form-control" id="send_place_email" placeholder="name@mail.ru">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="send_place_telephone">Телефон</label>
+                                        <input type="text" class="form-control" id="send_place_telephone" placeholder="+7">
+                                    </div>
+                                </div>
+                                <div class="button_save">
+                                    <a href="#" class="btn save" role="button">
+                                        Сохранить
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6">
+                            <div class="preview_widget widget">
+                                <p class="title">Предпросмотр виджета</p>
+                                <div class="widget-robot">
+                                    <header>
+                                        <img src="./images/consultant.png" alt="Консультант" width="61" height="61">
+                                        <div class="description">
+                                            <div class="name">
+                                                Консультант
+                                            </div>
+                                            <div class="speech">
+                                                Я отвечу на Ваши вопросы
+                                            </div>
+                                        </div>
+                                    </header>
+                                    <div class="chat">
+                                        <div class="message to">
+                                            Давайте я Вам отвечу детально по телефону.
+                                        </div>
+                                        <div class="message from">
+                                            Оставьте свои телефон, мы перезвоним и ответим на Ваш вопрос.
+                                            <form>
+                                                <input type="text" placeholder="Введите имя">
+                                                <input type="text" placeholder="Введите телефон*">
+                                                <a href="" class="btn send" role="button">
+                                                    Отправить
+                                                </a>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <footer>
+                                        <div class="copyright">
+                                            Работает на Up Sale Site
+                                        </div>
+                                    </footer>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        </div>
+</div>
+<footer class="footer">
+    <div class="down is-colored">
+        <div class="container">
+            <div class="col-xs-6">
+                <div class="copyright">
+                    <p>
+                        Up Sale Site © 2016
+                    </p>
+                    <a href="#">
+                        Политика конфенциальности
+                    </a>
+                </div>
+            </div>
+            <div class="col-xs-6">
+                <div class="payment-methods">
+                    <img src="./images/payments-methods.png" alt="Способы оплаты" width="237" height="30">
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script type="text/javascript" src="https://yastatic.net/jquery/1.12.0/jquery.min.js"></script>
+<script type="text/javascript" src="./js/bootstrap.min.js" charset="UTF-8"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" charset="UTF-8"></script>
+<script type="text/javascript" src="./js/jquery.placeholder.min.js" charset="UTF-8"></script>
+<!--<script type="text/javascript" src="./js/jquery.custom-scrollbar.min.js" charset="UTF-8"></script>-->
+<script type="text/javascript" src="./js/main.js"></script>
+<script type="text/javascript" src="./js/bootstrap-filestyle.min.js"> </script>
+<script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+</body>
+</html>

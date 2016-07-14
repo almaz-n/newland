@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Up Sale Site</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/lib/bootstrap.min.css" />
+        <link rel="stylesheet" href="./css/lib/bootstrap-theme.min.css" />
+        <!--<link rel="stylesheet" href="./css/lib/jquery.custom-scrollbar.css" />-->
+        <link rel="stylesheet" href="./css/style.css" />
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+    </head>
+    <body>
+        <header class="header">
+            <div class="container">
+                <div class="logo col-xs-4">
+                    <div class="image">
+                        <img src="./images/logo.png" alt="Лого" width="36" height="58" />
+                    </div>
+                    <div class="logo-text">
+                        Up Sale Site
+                    </div>
+                    <div class="logo-description">
+                        Продажи сайта пойдут ВВЕРХ
+                    </div>
+                </div>
+                <nav class="menu col-xs-8 no-paddings">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                Выйти
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Кабинет
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Написать нам
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="active">
+                                Заработок
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Тарифы
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Виджеты
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <section class="user-statistics">
+            <div class="container">
+                <div class="col-xs-4">
+                    <div class="data">
+                        <span class="name big">
+                            Текущий тариф:
+                        </span>
+                        <span class="value big">
+                            Старт
+                            <a href="#">
+                                (сменить)
+                            </a>
+                        </span>
+                    </div>
+                    <div class="data">
+                        <span class="name big">
+                            Осталось: 
+                        </span>
+                        <span class="value big">
+                            14 дней
+                            <a href="#">
+                                (продлить)
+                            </a>
+                        </span>
+                    </div>
+                </div>
+                <div class="col-xs-2">
+                    <div class="data">
+                        <span class="name">
+                            Доступно:  
+                        </span>
+                        <span class="value">
+                            3 домена
+                        </span>
+                    </div>
+                    <div class="data">
+                        <span class="name">
+                            Использованно:
+                        </span>
+                        <span class="value">
+                            1/3
+                        </span>
+                    </div>
+                </div>
+                <div class="col-xs-2">
+                    <div class="data">
+                        <span class="name">
+                            Доступно:
+                        </span>
+                        <span class="value">
+                            3 виджета
+                        </span>
+                    </div>
+                    <div class="data">
+                        <span class="name">
+                            Использованно:
+                        </span>
+                        <span class="value">
+                            2/3
+                        </span>
+                    </div>
+                </div>
+                <div class="col-xs-2">
+                    <div class="data">
+                        <span class="name">
+                            Доступно: 
+                        </span>
+                        <span class="value">
+                            50 смс
+                        </span>
+                    </div>
+                    <div class="data">
+                        <span class="name">
+                            Использованно:
+                        </span>
+                        <span class="value">
+                            0/50 
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="create-ticket-for-tech-support">
+            <div class="container">
+                <div class="col-xs-6 col-xs-offset-3">
+                    <form autocomplete="off">
+                        <h1>
+                            Обращение в&nbsp;службу&nbsp;поддержки
+                        </h1>
+                        <label for="topic">Тема сообщения</label>
+                        <select id="topic">
+                            <option>Вопрос по настройке виджетов</option>
+                            <option>Ещё вопрос</option>
+                            <option>Больше вопросов</option>
+                        </select>
+                        <label for="message">Сообщение</label>
+                        <textarea id="message" rows="8"></textarea>
+                        <input type="file" name="file" id="file" class="inputFile" />
+                        <label for="file">+ Прикрепить файл</label>
+                        <input type="button" value="Отправить" />
+                        <span>
+                            Ответ придет на e-mail,<br/> указанный Вами при регистрации
+                        </span>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="down is-colored">
+                <div class="container">
+                    <div class="col-xs-6">
+                        <div class="copyright">
+                            <p>
+                                Up Sale Site © 2016
+                            </p>
+                            <a href="#">
+                                Политика конфенциальности
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xs-6">
+                        <div class="payment-methods">
+                            <img src="./images/payments-methods.png" alt="Способы оплаты" width="237" height="30" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script type="text/javascript" src="https://yastatic.net/jquery/1.12.0/jquery.min.js"></script>
+        <script type="text/javascript" src="./js/bootstrap.min.js" charset="UTF-8"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" charset="UTF-8"></script>
+        <script type="text/javascript" src="./js/jquery.placeholder.min.js" charset="UTF-8"></script>
+        <!--<script type="text/javascript" src="./js/jquery.custom-scrollbar.min.js" charset="UTF-8"></script>-->
+        <script type="text/javascript" src="./js/main.js"></script>
+    </body>
+</html>
